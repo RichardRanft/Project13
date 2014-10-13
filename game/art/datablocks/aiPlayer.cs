@@ -23,16 +23,8 @@
 //-----------------------------------------------------------------------------
 // Demo Pathed AIPlayer.
 //-----------------------------------------------------------------------------
-exec("./aiPlayer/Boombot.cs");
-exec("./aiPlayer/ForgeSoldier.cs");
 exec("./aiPlayer/Gideon.cs");
-exec("./aiPlayer/greenRobot.cs");
-exec("./aiPlayer/KPBot.cs");
 exec("./aiPlayer/Soldier.cs");
-exec("./aiPlayer/SpaceOrc.cs");
-exec("./aiPlayer/Spacesuit.cs");
-exec("./aiPlayer/tge_elf.cs");
-exec("./aiPlayer/TorqueOrc.cs");
 exec("./aiPlayer/Vivian.cs");
 
 datablock PlayerData(DemoPlayer : DefaultPlayerData)
