@@ -1,0 +1,42 @@
+<TorsionProjectOptions>
+<Address>127.0.0.1</Address>
+<Password>password</Password>
+<Port>6060</Port>
+<LastConfig>Debug</LastConfig>
+<Breakpoints/>
+<Bookmarks/>
+<OpenFiles>
+<File ScrollX="0" ScrollY="0">scripts\gui\playGui.cs</File>
+<File ScrollX="0" ScrollY="2">scripts\gui\sidebars\sidebars.cs</File>
+<File ScrollX="0" ScrollY="179">scripts\server\commands.cs</File>
+<File ScrollX="0" ScrollY="130">scripts\server\gameCore.cs</File>
+<File ScrollX="0" ScrollY="360">art\gui\chooseLevelDlg.gui</File>
+<File ScrollX="0" ScrollY="206">scripts\gui\chooseLevelDlg.cs</File>
+<File ScrollX="0" ScrollY="748">art\gui\joinServerDlg.gui</File>
+<File ScrollX="0" ScrollY="0">scripts\gui\playerDBManager.cs</File>
+<File ScrollX="0" ScrollY="158">scripts\client\client.cs</File>
+<File ScrollX="0" ScrollY="147">scripts\server\d20\player\d20Player.cs</File>
+<File ScrollX="0" ScrollY="135">scripts\server\d20\player\d20PlayerStats.cs</File>
+<File ScrollX="0" ScrollY="79">scripts\server\d20\player\d20Character.cs</File>
+<File ScrollX="0" ScrollY="204">scripts\server\d20\main.cs</File>
+<File ScrollX="0" ScrollY="0">scripts\gui\CharSheet\scripts\CharacterSheet.cs</File>
+<File ScrollX="0" ScrollY="99">scripts\gui\CharCreation\scripts\creator.cs</File>
+<File ScrollX="0" ScrollY="0">scripts\gui\CharCreation\main.cs</File>
+<File ScrollX="0" ScrollY="176">scripts\client\init.cs</File>
+<File ScrollX="0" ScrollY="77">art\datablocks\d20Equipment\main.cs</File>
+<File ScrollX="0" ScrollY="43">scripts\gui\CharCreation\scripts\statPage.cs</File>
+<File ScrollX="0" ScrollY="0">scripts\gui\CharCreation\scripts\featsPage.cs</File>
+<File ScrollX="0" ScrollY="0">scripts\gui\CharCreation\scripts\skillsPage.cs</File>
+<File ScrollX="0" ScrollY="0">scripts\gui\CharCreation\scripts\classPage.cs</File>
+<File ScrollX="0" ScrollY="1304">scripts\gui\CharCreation\creator.gui</File>
+<File ScrollX="0" ScrollY="43">core\scripts\server\server.cs</File>
+<File ScrollX="0" ScrollY="272">scripts\server\gameD20.cs</File>
+<File ScrollX="0" ScrollY="134" Active="true">core\scripts\server\clientConnection.cs</File>
+<File ScrollX="0" ScrollY="97">scripts\main.cs</File>
+<File ScrollX="0" ScrollY="2">scripts\client\defaults.cs</File>
+<File ScrollX="0" ScrollY="0">art\materials\particleMats.cs</File>
+<File ScrollX="0" ScrollY="0">art\datablocks\ribbons.cs</File>
+<File ScrollX="0" ScrollY="0">art\main.cs</File>
+<File ScrollX="0" ScrollY="0">art\datablocks\datablockExec.cs</File>
+</OpenFiles>
+</TorsionProjectOptions>

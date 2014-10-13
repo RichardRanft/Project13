@@ -1,0 +1,107 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiWindowCtrl(CharacterSheet) {
+   position = "0 0";
+   extent = "829 747";
+   minExtent = "8 2";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   profile = "GuiWindowProfile";
+   visible = "1";
+   active = "1";
+   tooltipProfile = "GuiToolTipProfile";
+   hovertime = "1000";
+   isContainer = "1";
+   text = "Character Sheet";
+   canMaximize = "0";
+   canSave = "1";
+   canSaveDynamicFields = "1";
+
+   new GuiChunkedBitmapCtrl() {
+      bitmap = "art/gui/background.png";
+      useVariable = "0";
+      tile = "0";
+      position = "0 20";
+      extent = "829 727";
+      minExtent = "8 2";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      profile = "ButtonProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "1";
+      canSave = "1";
+      canSaveDynamicFields = "0";
+
+       new GuiBitmapCtrl() {
+          bitmap = "./images/CharInfoBox.png";
+          wrap = "0";
+          position = "0 10";
+          extent = "580 145";
+          minExtent = "8 2";
+          horizSizing = "right";
+          vertSizing = "bottom";
+          profile = "GuiDefaultProfile";
+          visible = "1";
+          active = "1";
+          tooltipProfile = "GuiToolTipProfile";
+          hovertime = "1000";
+          isContainer = "1";
+          canSave = "1";
+          canSaveDynamicFields = "0";
+       };
+       new GuiBitmapCtrl() {
+          bitmap = "./images/AttributeBox.png";
+          wrap = "0";
+          position = "5 176";
+          extent = "373 302";
+          minExtent = "8 2";
+          horizSizing = "right";
+          vertSizing = "bottom";
+          profile = "GuiDefaultProfile";
+          visible = "1";
+          active = "1";
+          tooltipProfile = "GuiToolTipProfile";
+          hovertime = "1000";
+          isContainer = "1";
+          canSave = "1";
+          canSaveDynamicFields = "0";
+       };
+       new GuiBitmapCtrl() {
+          bitmap = "./images/HealthDefenseBox.png";
+          wrap = "0";
+          position = "393 176";
+          extent = "432 103";
+          minExtent = "8 2";
+          horizSizing = "right";
+          vertSizing = "bottom";
+          profile = "GuiDefaultProfile";
+          visible = "1";
+          active = "1";
+          tooltipProfile = "GuiToolTipProfile";
+          hovertime = "1000";
+          isContainer = "1";
+          canSave = "1";
+          canSaveDynamicFields = "0";
+       };
+       new GuiBitmapCtrl() {
+          bitmap = "./images/AttackNotesBox.png";
+          wrap = "0";
+          position = "393 288";
+          extent = "432 103";
+          minExtent = "8 2";
+          horizSizing = "right";
+          vertSizing = "bottom";
+          profile = "GuiDefaultProfile";
+          visible = "1";
+          active = "1";
+          tooltipProfile = "GuiToolTipProfile";
+          hovertime = "1000";
+          isContainer = "1";
+          canSave = "1";
+          canSaveDynamicFields = "0";
+       };
+    };
+};
+//--- OBJECT WRITE END ---

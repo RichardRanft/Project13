@@ -1,0 +1,1 @@
+project13_DEBUG -dedicated -mission "levels/empty terrain.mis"

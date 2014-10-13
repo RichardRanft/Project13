@@ -1,0 +1,264 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiWindowCtrl(InventoryGui) {
+   position = "0 0";
+   extent = "992 673";
+   minExtent = "8 2";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   profile = "GuiWindowProfile";
+   visible = "1";
+   active = "1";
+   tooltipProfile = "GuiToolTipProfile";
+   hovertime = "1000";
+   isContainer = "1";
+   text = "Inventory";
+   canMaximize = "0";
+   canSave = "1";
+   canSaveDynamicFields = "1";
+
+   new GuiBitmapBorderCtrl() {
+      position = "0 20";
+      extent = "992 653";
+      minExtent = "8 2";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      profile = "InventorySunkenContainerProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "0";
+      canSave = "1";
+      canSaveDynamicFields = "0";
+
+      new GuiBitmapCtrl() {
+         bitmap = "art/gui/background.png";
+         wrap = "0";
+         position = "0 0";
+         extent = "992 673";
+         minExtent = "320 320";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         profile = "InventoryDefaultProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+   };
+   new GuiPanel() {
+      docking = "None";
+      margin = "0 0 0 0";
+      padding = "0 0 0 0";
+      anchorTop = "1";
+      anchorBottom = "0";
+      anchorLeft = "1";
+      anchorRight = "0";
+      position = "26 33";
+      extent = "360 114";
+      minExtent = "16 16";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      profile = "GuiDefaultProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+      panelName = "MainPanel";
+
+      new GuiTextCtrl() {
+         text = "Inventory";
+         maxLength = "1024";
+         margin = "0 0 0 0";
+         padding = "0 0 0 0";
+         anchorTop = "1";
+         anchorBottom = "0";
+         anchorLeft = "1";
+         anchorRight = "0";
+         position = "3 3";
+         extent = "142 31";
+         minExtent = "8 2";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiBigTextProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "1";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiControl() {
+         position = "6 41";
+         extent = "346 64";
+         minExtent = "8 2";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiDefaultProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+         panelName = "content";
+      };
+   };
+   new GuiPanel() {
+      docking = "None";
+      margin = "0 0 0 0";
+      padding = "0 0 0 0";
+      anchorTop = "1";
+      anchorBottom = "0";
+      anchorLeft = "1";
+      anchorRight = "0";
+      position = "401 33";
+      extent = "577 631";
+      minExtent = "16 16";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      profile = "GuiDefaultProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+      panelName = "InventoryPanel";
+
+      new GuiControl() {
+         position = "8 7";
+         extent = "561 618";
+         minExtent = "8 2";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiDefaultProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+         panelName = "content";
+      };
+   };
+   new GuiPanel() {
+      docking = "None";
+      margin = "0 0 0 0";
+      padding = "0 0 0 0";
+      anchorTop = "1";
+      anchorBottom = "0";
+      anchorLeft = "1";
+      anchorRight = "0";
+      position = "26 161";
+      extent = "361 503";
+      minExtent = "16 16";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      profile = "GuiDefaultProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+      panelName = "DetailPanel";
+
+      new GuiTextCtrl() {
+         text = "Details";
+         maxLength = "1024";
+         margin = "0 0 0 0";
+         padding = "0 0 0 0";
+         anchorTop = "1";
+         anchorBottom = "0";
+         anchorLeft = "1";
+         anchorRight = "0";
+         position = "3 3";
+         extent = "142 31";
+         minExtent = "8 2";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiBigTextProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "1";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiControl() {
+         position = "6 41";
+         extent = "346 456";
+         minExtent = "8 2";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiDefaultProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+         panelName = "content";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+function GuiControl::FindContentPanes(%this)
+{
+    for (%i = 0; %i < %this.getCount(); %i++)
+    {
+        %obj = %this.getObject(%i);
+        if ( %obj.panelName $= "MainPanel" )
+        {
+            %this.MainPanel = %obj;
+            for (%j = 0; %j < %obj.getCount(); %j++)
+            {
+                %subObj = %obj.getObject(%j);
+                if ( %j.panelName $= "content" )
+                {
+                    %obj.content = %subObj;
+                }
+            }
+        }
+        if ( %obj.panelName $= "InventoryPanel" )
+        {
+            %this.InventoryPanel = %obj;
+            for (%j = 0; %j < %obj.getCount(); %j++)
+            {
+                %subObj = %obj.getObject(%j);
+                if ( %j.panelName $= "content" )
+                {
+                    %obj.content = %subObj;
+                }
+            }
+        }
+        if ( %obj.panelName $= "DetailPanel" )
+        {
+            %this.DetailPanel = %obj;
+            for (%j = 0; %j < %obj.getCount(); %j++)
+            {
+                %subObj = %obj.getObject(%j);
+                if ( %j.panelName $= "content" )
+                {
+                    %obj.content = %subObj;
+                }
+            }
+        }
+    }
+}
+
+%guiContent.FindContentPanes();

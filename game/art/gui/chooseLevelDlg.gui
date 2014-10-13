@@ -1,0 +1,468 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(ChooseLevelDlg) {
+   position = "0 0";
+   extent = "1024 768";
+   minExtent = "8 8";
+   horizSizing = "center";
+   vertSizing = "center";
+   profile = "GuiOverlayProfile";
+   visible = "1";
+   active = "1";
+   tooltipProfile = "GuiToolTipProfile";
+   hovertime = "1000";
+   isContainer = "1";
+   canSave = "1";
+   canSaveDynamicFields = "1";
+      enabled = "1";
+      launchInEditor = "0";
+
+   new GuiWindowCtrl(ChooseLevelWindow) {
+      text = "Choose Level";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      canCollapse = "0";
+      closeCommand = "Canvas.popDialog(ChooseLevelDlg);";
+      edgeSnap = "1";
+      margin = "0 0 0 0";
+      padding = "0 0 0 0";
+      anchorTop = "1";
+      anchorBottom = "0";
+      anchorLeft = "1";
+      anchorRight = "0";
+      position = "35 167";
+      extent = "954 433";
+      minExtent = "8 8";
+      horizSizing = "center";
+      vertSizing = "center";
+      profile = "GuiWindowProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "1";
+      canSave = "1";
+      canSaveDynamicFields = "0";
+
+      new GuiBitmapCtrl() {
+         bitmap = "levels/Empty Room_preview";
+         wrap = "0";
+         position = "366 31";
+         extent = "400 300";
+         minExtent = "8 2";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiDefaultProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         internalName = "CurrentPreview";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new GuiTextCtrl() {
+         text = "Empty Room";
+         maxLength = "255";
+         margin = "0 0 0 0";
+         padding = "0 0 0 0";
+         anchorTop = "1";
+         anchorBottom = "0";
+         anchorLeft = "1";
+         anchorRight = "0";
+         position = "776 31";
+         extent = "165 18";
+         minExtent = "8 8";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiMediumTextProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         internalName = "levelName";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiTextCtrl() {
+         text = "Description:";
+         maxLength = "255";
+         margin = "0 0 0 0";
+         padding = "0 0 0 0";
+         anchorTop = "1";
+         anchorBottom = "0";
+         anchorLeft = "1";
+         anchorRight = "0";
+         position = "776 50";
+         extent = "72 18";
+         minExtent = "8 8";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiTextProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiMLTextCtrl() {
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         useURLMouseCursor = "0";
+         position = "776 76";
+         extent = "165 28";
+         minExtent = "8 8";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiMLTextProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         internalName = "LevelDescription";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiCheckBoxCtrl() {
+         text = " Host";
+         groupNum = "-1";
+         buttonType = "ToggleButton";
+         useMouseEvents = "0";
+         position = "776 303";
+         extent = "45 23";
+         minExtent = "8 8";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiCheckBoxProfile";
+         visible = "1";
+         active = "1";
+         variable = "pref::HostMultiPlayer";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiButtonCtrl(ChooseLevelDlgGoBtn) {
+         text = "Go!";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "1";
+         position = "814 287";
+         extent = "143 56";
+         minExtent = "8 8";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiMenuButtonProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiBitmapButtonCtrl() {
+         bitmap = "art/gui/previous-button";
+         bitmapMode = "Stretched";
+         autoFitExtents = "0";
+         useModifiers = "0";
+         useStates = "1";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+         position = "366 343";
+         extent = "11 81";
+         minExtent = "8 2";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiDefaultProfile";
+         visible = "0";
+         active = "1";
+         command = "ChooseLevelWindow.previousPreviews();";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         internalName = "PreviousSmallPreviews";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new GuiDynamicCtrlArrayControl() {
+         colCount = "5";
+         colSize = "108";
+         rowCount = "1";
+         rowSize = "81";
+         rowSpacing = "0";
+         colSpacing = "10";
+         frozen = "0";
+         autoCellSize = "1";
+         fillRowFirst = "1";
+         dynamicSize = "0";
+         padding = "0 0 0 0";
+         position = "366 343";
+         extent = "600 81";
+         minExtent = "8 2";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiDefaultProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "1";
+         internalName = "SmallPreviews";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiBitmapButtonCtrl() {
+         bitmap = "art/gui/next-button";
+         bitmapMode = "Stretched";
+         autoFitExtents = "0";
+         useModifiers = "0";
+         useStates = "1";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+         position = "935 343";
+         extent = "11 81";
+         minExtent = "8 2";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiDefaultProfile";
+         visible = "0";
+         active = "1";
+         command = "ChooseLevelWindow.nextPreviews();";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         internalName = "NextSmallPreviews";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new GuiTextListCtrl(CL_levelList) {
+         columns = "0";
+         fitParentWidth = "1";
+         clipColumnText = "0";
+         position = "357 1";
+         extent = "80 60";
+         minExtent = "8 8";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiTextArrayProfile";
+         visible = "0";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "1";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiControl() {
+         position = "10 30";
+         extent = "347 393";
+         minExtent = "8 8";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiTransparentProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "1";
+         internalName = "clPlayerBox";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+
+         new GuiScrollCtrl() {
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOn";
+            vScrollBar = "dynamic";
+            lockHorizScroll = "0";
+            lockVertScroll = "0";
+            constantThumbHeight = "0";
+            childMargin = "2 0";
+            mouseWheelScrollSpeed = "-1";
+            margin = "0 0 0 0";
+            padding = "0 0 0 0";
+            anchorTop = "1";
+            anchorBottom = "0";
+            anchorLeft = "1";
+            anchorRight = "0";
+            position = "0 0";
+            extent = "140 393";
+            minExtent = "8 2";
+            horizSizing = "width";
+            vertSizing = "height";
+            profile = "GuiScrollProfile";
+            visible = "1";
+            active = "1";
+            tooltipProfile = "GuiToolTipProfile";
+            hovertime = "1000";
+            isContainer = "1";
+            internalName = "PreviewScroll";
+            canSave = "1";
+            canSaveDynamicFields = "0";
+
+            new GuiDynamicCtrlArrayControl() {
+               colCount = "1";
+               colSize = "118";
+               rowCount = "12";
+               rowSize = "30";
+               rowSpacing = "2";
+               colSpacing = "0";
+               frozen = "0";
+               autoCellSize = "1";
+               fillRowFirst = "0";
+               dynamicSize = "0";
+               padding = "0 0 0 0";
+               position = "3 0";
+               extent = "120 393";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "1";
+               internalName = "PlayerPreviews";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+         };
+         new GuiControl() {
+            position = "150 0";
+            extent = "190 351";
+            minExtent = "8 8";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            profile = "GuiTextEditProfile";
+            visible = "1";
+            active = "1";
+            tooltipProfile = "GuiToolTipProfile";
+            hovertime = "1000";
+            isContainer = "1";
+            canSave = "1";
+            canSaveDynamicFields = "0";
+
+            new GuiObjectView(cldlgPlayerPreview) {
+               shapeFile = "art/shapes/actors/BoomBot/BoomBot.dts";
+               animSequence = "scoutroot";
+               mountedNode = "mount0";
+               lightColor = "1 1 1 1";
+               lightAmbient = "0.5 0.5 0.5 1";
+               lightDirection = "0 0.707 -0.707";
+               orbitDiststance = "5.0";
+               minOrbitDiststance = "2.5";
+               maxOrbitDiststance = "10.0";
+               cameraSpeed = "0.01";
+               cameraRotation = "0 0 3.14";
+               cameraZRot = "0";
+               forceFOV = "0";
+               reflectPriority = "0";
+               renderStyle = "standard";
+               margin = "0 0 0 0";
+               padding = "0 0 0 0";
+               anchorTop = "1";
+               anchorBottom = "0";
+               anchorLeft = "1";
+               anchorRight = "0";
+               position = "0 0";
+               extent = "189 342";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "1";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+         };
+         new GuiButtonCtrl(btnCreateChar) {
+            text = "New Character";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            useMouseEvents = "0";
+            position = "150 357";
+            extent = "93 30";
+            minExtent = "8 2";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            profile = "GuiButtonProfile";
+            visible = "1";
+            active = "1";
+            command = "Canvas.pushDialog(CharacterCreator);";
+            tooltipProfile = "GuiToolTipProfile";
+            hovertime = "1000";
+            isContainer = "0";
+            canSave = "1";
+            canSaveDynamicFields = "0";
+         };
+         new GuiButtonCtrl(btnLoadChar) {
+            text = "Load Character";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            useMouseEvents = "0";
+            position = "250 357";
+            extent = "89 30";
+            minExtent = "8 2";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            profile = "GuiButtonProfile";
+            visible = "1";
+            active = "1";
+            tooltipProfile = "GuiToolTipProfile";
+            hovertime = "1000";
+            isContainer = "0";
+            canSave = "1";
+            canSaveDynamicFields = "0";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+// Do this onMouseUp not via Command which occurs onMouseDown so we do
+// not have a lingering mouseUp event lingering in the ether.
+function ChooseLevelDlgGoBtn::onMouseUp( %this )
+{
+    if ($Game::SelectedPlayerClass $= "")
+    {
+        // get first in container
+        %btn = ChooseLevelWindow->clPlayerBox->PreviewScroll->PlayerPreviews.getObject(0);
+        $Game::SelectedPlayerClass = %btn.selectedDatablock;
+    }
+   // So we can't fire the button when loading is in progress.
+   if ( isObject( ServerGroup ) )
+      return;
+
+   // Launch the chosen level with the editor open?
+   if ( ChooseLevelDlg.launchInEditor )
+   {
+      activatePackage( "BootEditor" );
+      ChooseLevelDlg.launchInEditor = false; 
+      StartLevel("", "SinglePlayer");
+   }
+   else
+   {
+      StartLevel(); 
+   }
+}
