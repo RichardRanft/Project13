@@ -31,12 +31,13 @@
 <File ScrollX="0" ScrollY="1304">scripts\gui\CharCreation\creator.gui</File>
 <File ScrollX="0" ScrollY="43">core\scripts\server\server.cs</File>
 <File ScrollX="0" ScrollY="272">scripts\server\gameD20.cs</File>
-<File ScrollX="0" ScrollY="134" Active="true">core\scripts\server\clientConnection.cs</File>
+<File ScrollX="0" ScrollY="134">core\scripts\server\clientConnection.cs</File>
 <File ScrollX="0" ScrollY="97">scripts\main.cs</File>
 <File ScrollX="0" ScrollY="2">scripts\client\defaults.cs</File>
 <File ScrollX="0" ScrollY="0">art\materials\particleMats.cs</File>
 <File ScrollX="0" ScrollY="0">art\datablocks\ribbons.cs</File>
 <File ScrollX="0" ScrollY="0">art\main.cs</File>
 <File ScrollX="0" ScrollY="0">art\datablocks\datablockExec.cs</File>
+<File ScrollX="0" ScrollY="3" Active="true">art\datablocks\aiPlayer.cs</File>
 </OpenFiles>
 </TorsionProjectOptions>

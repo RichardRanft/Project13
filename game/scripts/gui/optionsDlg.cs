@@ -19,7 +19,7 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
-
+exec("./keyMap.cs");
 
 /// Returns true if the current quality settings equal
 /// this graphics quality level.
@@ -439,94 +439,6 @@ function OptionsDlg::_autoDetectQuality( %this )
    }
 }
 
-$RemapCount = 0;
-$RemapName[$RemapCount] = "Forward";
-$RemapCmd[$RemapCount] = "moveforward";
-$RemapCount++;
-$RemapName[$RemapCount] = "Backward";
-$RemapCmd[$RemapCount] = "movebackward";
-$RemapCount++;
-$RemapName[$RemapCount] = "Strafe Left";
-$RemapCmd[$RemapCount] = "moveleft";
-$RemapCount++;
-$RemapName[$RemapCount] = "Strafe Right";
-$RemapCmd[$RemapCount] = "moveright";
-$RemapCount++;
-$RemapName[$RemapCount] = "Turn Left";
-$RemapCmd[$RemapCount] = "turnLeft";
-$RemapCount++;
-$RemapName[$RemapCount] = "Turn Right";
-$RemapCmd[$RemapCount] = "turnRight";
-$RemapCount++;
-$RemapName[$RemapCount] = "Look Up";
-$RemapCmd[$RemapCount] = "panUp";
-$RemapCount++;
-$RemapName[$RemapCount] = "Look Down";
-$RemapCmd[$RemapCount] = "panDown";
-$RemapCount++;
-$RemapName[$RemapCount] = "Jump";
-$RemapCmd[$RemapCount] = "jump";
-$RemapCount++;
-$RemapName[$RemapCount] = "Crouch";
-$RemapCmd[$RemapCount] = "doCrouch";
-$RemapCount++;
-$RemapName[$RemapCount] = "Fire Weapon";
-$RemapCmd[$RemapCount] = "mouseFire";
-$RemapCount++;
-$RemapName[$RemapCount] = "Character Sheet";
-$RemapCmd[$RemapCount] = "toggleCharSheet";
-$RemapCount++;
-$RemapName[$RemapCount] = "Inventory";
-$RemapCmd[$RemapCount] = "ToggleInventory";
-$RemapCount++;
-$RemapName[$RemapCount] = "Adjust Zoom";
-$RemapCmd[$RemapCount] = "setZoomFov";
-$RemapCount++;
-$RemapName[$RemapCount] = "Toggle Zoom";
-$RemapCmd[$RemapCount] = "toggleZoom";
-$RemapCount++;
-$RemapName[$RemapCount] = "Free Look";
-$RemapCmd[$RemapCount] = "toggleFreeLook";
-$RemapCount++;
-$RemapName[$RemapCount] = "Switch 1st/3rd";
-$RemapCmd[$RemapCount] = "toggleFirstPerson";
-$RemapCount++;
-$RemapName[$RemapCount] = "Chat to Everyone";
-$RemapCmd[$RemapCount] = "toggleMessageHud";
-$RemapCount++;
-$RemapName[$RemapCount] = "Message Hud PageUp";
-$RemapCmd[$RemapCount] = "pageMessageHudUp";
-$RemapCount++;
-$RemapName[$RemapCount] = "Message Hud PageDown";
-$RemapCmd[$RemapCount] = "pageMessageHudDown";
-$RemapCount++;
-$RemapName[$RemapCount] = "Resize Message Hud";
-$RemapCmd[$RemapCount] = "resizeMessageHud";
-$RemapCount++;
-$RemapName[$RemapCount] = "Show Scores";
-$RemapCmd[$RemapCount] = "showPlayerList";
-$RemapCount++;
-$RemapName[$RemapCount] = "Animation - Wave";
-$RemapCmd[$RemapCount] = "celebrationWave";
-$RemapCount++;
-$RemapName[$RemapCount] = "Animation - Salute";
-$RemapCmd[$RemapCount] = "celebrationSalute";
-$RemapCount++;
-$RemapName[$RemapCount] = "Suicide";
-$RemapCmd[$RemapCount] = "suicide";
-$RemapCount++;
-$RemapName[$RemapCount] = "Toggle Camera";
-$RemapCmd[$RemapCount] = "toggleCamera";
-$RemapCount++;
-$RemapName[$RemapCount] = "Drop Camera at Player";
-$RemapCmd[$RemapCount] = "dropCameraAtPlayer";
-$RemapCount++;
-$RemapName[$RemapCount] = "Drop Player at Camera";
-$RemapCmd[$RemapCount] = "dropPlayerAtCamera";
-$RemapCount++;
-$RemapName[$RemapCount] = "Bring up Options Dialog";
-$RemapCmd[$RemapCount] = "bringUpOptions";
-$RemapCount++;
 
 
 function restoreDefaultMappings()
